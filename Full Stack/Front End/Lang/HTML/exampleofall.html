@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of all HTML</title>
+</head>
+<body>
+    <center><h1>HTML-Hyper Text Markup Language</h1></center>
+    <h3>Heading</h3>
+    <p>HTML defines six levels of headings.The heading elements are H1, H2, H3, H4, H5, and H6 with H1 being the highest (or most important) level and H6 the least.</p>
+    <li><a href="../HTML/headings/heading.html">Output of heading</a></li>
+
+    <h3>Paragraph</h3>
+    <p>A paragraph tag is used to define a paragraph.When the paragraph tag is added then it automatically puts a blank space before the starting of the text.</p>
+    <li><a href="../HTML/paragraph/para.html">Output of paragraph</a></li>
+
+    <h3>Images</h3>
+    <p>The (img) tag is used to embed an image in an HTML page. Images are not technically inserted into a web page; images are linked to web pages. The (img) tag creates a holding space for the referenced image. The (img) tag has two required attributes: src - Specifies the path to the image.</p>
+    <img src="../HTML/image/1.jpg" width="300" height="200"><br>
+    <li><a href="../HTML/imagetag/image.html">Output of image</a></li>
+
+    <h3>Videos</h3>
+    <p>The video tag is used to embed video content in a document, such as a movie clip or other video streams. The video tag contains one or more source tags with different video sources. The browser will choose the first source it supports.</p>
+    <video src="../HTML/videos/OMG 2.mp4" width="300" height="200" controls></video><br>
+    <li><a href="../HTML/videos/video.html">Output Of video</a></li>
+
+    <h3>Incline Block</h3>
+    <p>A block-level element always starts on a new line and takes up the full width available. An inline element does not start on a new line and it only takes up as much width as necessary.</p>
+    <h2 style="background-color: blueviolet;" >Hi</h2>
+    <h2 style="background-color: rosybrown;" >Hi All</h2>
+    <span>hi</span>
+    <span>hi All</span>
+    <li><a href="../HTML/inline-block/inlineblock.html">Output of incline block</a></li>
+
+    <h3>Order Unorder List</h3>
+    <p>An unordered list (ul) is used to create a list of items in no particular order i.e. the order of items is not relevant. By default, the items in this list will be marked with bullets. Whereas, an ordered list (ol) is used to create a list of items in a specific order.</p>
+    <ol>
+    <li>Rachana</li>
+    <li>Sahana</li>
+    <li>Puttu</li>
+    <li>Shahi</li>
+    </ol>
+    <ul>
+    <li>Rachana</li>
+    <li>Sahana</li>
+    <li>Puttu</li>
+    <li>Shashi</li>
+    </ul>
+    <a href="../HTML/order-unorder list/order-unorderlist.html">Output of order-unorderlist</a>
+
+    <h3>Form</h3>
+    <p>HTML Form is a document that stores information of a user on a web server using interactive controls. An HTML form contains different kinds of information such as username, password, contact number, email id, etc. The elements used in an HTML form are the check box, input box, radio buttons, submit buttons, etc.</p>
+    <form>
+        <h2>Example of Form</h2>
+        <div><lable>Number</lable></div>
+        <div><input type="number" name="number" id=""></div>
+        <div><label>Name</label></div>
+        <div><input type="name" name="name" id=""></div>
+        <div><label>Password</label></div>
+        <div><input type="password" name="password" id=""></div><br>
+        <button>Submit</button>
+    </form>
+    <li><a href="../HTML/forms/forms.html">Output of form</a></li>
+
+    <h3>Table</h3>
+    <p>The (table) tag defines an HTML table. An HTML table consists of one (table) element and one or more (tr), (th), and (td) elements.The (tr) element defines a table row, the (th) element defines a table header, and the (td) element defines a table cell.</p>
+    <table border="2">
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Pincode</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Rachana</td>
+            <td>Apple</td>
+            <td>560023</td>
+        </tr>
+        <tr>
+        <td>2</td>
+        <td>Sahana</td>
+        <td>Apple</td>
+        <td>560001</td>
+        </tr>
+        <tr>
+        <td>3</td>
+        <td>Putta</td>
+        <td>Samsung</td> 
+        <td>560013</td> 
+        </tr>
+        <tr>
+        <td>4</td>
+        <td>Shahsi</td>
+        <td>Samsung</td>
+        <td>560033</td>
+        </tr>
+    </table>
+    <li><a href="../HTML/table/table.html">Output of table</a></li>
+
+    <center><form>
+        <table border="2">
+            <h2>Example of Form Table</h2>
+            <!--<tr><td colspan="2"><center><h2>Fill Up</h2></center></td></tr>-->
+            <tr><th colspan="2">Fill Up</th></tr>
+            <tr>
+                <td>Number</td>
+                <td><input type="number" name="number" id=""></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" id=""></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="number" name="phone number" id=""></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" id="">Male<input type="radio" name="gender" id="">Female</td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Subject</td>
+                <td><input type="checkbox" name="subject">Hindi<input type="checkbox" name="subject">English<input type="checkbox" name="subject">Kannada</td>
+            </tr>
+            <tr>
+                <td>Adress</td>
+                <td><textarea name="" id="" cols="30" rows="0"></textarea></td>
+            </tr>
+            <tr><td><button>Submit</button></td>
+            <td><button>Cancle</button></td></tr>
+        </table>
+    </form>
+</center>
+
+    <h3>Links</h3>
+    <ol>
+        <li><a href="../HTML/centreforms.html">Example1</a></li>
+        <li><a href="../HTML/centrehpimaghref.html">Example2</a></li>
+        <li><a href="../HTML/eg.html">Example3</a></li>
+        <li><a href="../HTML/example1.html">Example4</a></li>
+        <li><a href="../HTML/example2.html">Example5</a></li>
+        <li><a href="../HTML/formsvideoinclineblock.html">Example6</a></li>
+        <li><a href="../HTML/orderunlisttable.html">Example7</a></li>
+    </ol>
+</body>
+</html>
