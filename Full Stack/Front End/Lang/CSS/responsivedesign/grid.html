@@ -10,6 +10,7 @@
         .continer{
             color: black;
             font-size: 20px;
+            border: 2px solid green;
             display: grid;
             /*grid-template-rows: 100px 100px 100px;
             grid-template-columns: 200px 200px 200px;*/
@@ -17,8 +18,8 @@
             /*grid-template-rows: repeat(1,300px);
             grid-template-columns: repeat(4,500px);*/
 
-            grid-template-rows: repeat(2,150px);
-            grid-template-columns: repeat(2,1fr);
+            /*grid-template-rows: repeat(2,150px);
+            grid-template-columns: repeat(2,1fr);*/
 
             /*grid-template-rows: repeat(1,150px);
             grid-template-columns: repeat(4,200px);*/
@@ -28,6 +29,12 @@
 
             /*grid-template-rows: repeat(2,150px);
             grid-template-columns: repeat(auto-fill,minmax(200px,1fr));*/
+
+            /*grid-template-rows: repeat(1,150px);
+            grid-template-columns: repeat(2,minmax(200px,1fr));*/
+
+            grid-template-rows: repeat(auto-fill,minmax(150,1fr));
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
         }
         .item{
             background-color: red;
