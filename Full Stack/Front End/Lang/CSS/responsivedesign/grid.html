@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .continer{
+            color: black;
+            font-size: 20px;
+            display: grid;
+            /*grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 200px 200px 200px;*/
+
+            /*grid-template-rows: repeat(1,300px);
+            grid-template-columns: repeat(4,500px);*/
+
+            grid-template-rows: repeat(2,150px);
+            grid-template-columns: repeat(2,1fr);
+
+            /*grid-template-rows: repeat(1,150px);
+            grid-template-columns: repeat(4,200px);*/
+
+            /*grid-template-rows: repeat(2,200px);
+            grid-template-columns: repeat(2,minmax(100px,1fr));*/
+
+            /*grid-template-rows: repeat(2,150px);
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));*/
+        }
+        .item{
+            background-color: red;
+            margin: 10px;
+        }
+    </style>
+    <div class="continer">
+        <h1 class="item">im in hell 1</h1>
+        <h1 class="item">im in hell 2</h1>
+        <h1 class="item">im in hell 3</h1>
+        <h1 class="item">im in hell 4</h1>
+        <h1 class="item">im in hell 5</h1>
+        <h1 class="item">im in hell 6</h1>
+    </div>
+</body>
+</html>

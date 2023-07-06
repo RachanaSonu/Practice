@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .item{
+            color: rgba(11, 1, 20, 0.886);
+            font-size: 20px;
+            display: none;
+        }
+        @media(max-width:300px){
+            #item1{
+                background-color: chocolate;
+                display: block;
+            }
+        }
+        @media(min-width:301px) and (max-width:500px){
+            #item2{
+                display: block;
+                background-color: aqua;
+            }
+        }
+        @media(min-width:501px) and (max-width:900px){
+            #item3{
+                display: block;
+                background-color: blue;
+            }
+        }
+        @media(min-width:901px){
+            #item4{
+                display: block;
+                background-color: chartreuse;
+            }
+        }
+    </style>
+    <!--<h1 class="item" id="item1">mediaquery phone 0 to 300px</h1>
+    <h1 class="item" id="item2">mediaquer tab 301 to 500px</h1>
+    <h1 class="item" id="item3">mediaquery destop 501 to 900px</h1>
+    <h1 class="item" id="item4">mediaquery television 901 to </h1>-->
+
+    <h1 id="item1" class="item">mediaquery phone 0 to 300px</h1>
+    <h1 id="item2" class="item">mediaquer tab 301 to 500px</h1>
+    <h1 id="item3" class="item">mediaquery destop 501 to 900px</h1>
+    <h1 id="item4" class="item">mediaquery television 901 to </h1>
+</body>
+</html>
