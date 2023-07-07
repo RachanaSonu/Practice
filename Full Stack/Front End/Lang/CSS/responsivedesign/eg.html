@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .continer{
+            color: cornsilk;
+            display: grid;
+            border: 2px solid red;
+            height: 554px;
+        
+            /*grid-template-rows: 150px 150px;
+            grid-template-columns: 1fr 1fr 1fr;*/
+
+            /*grid-template-rows: repeat(2,150px);
+            grid-template-columns: repeat(3,1fr);*/
+
+            /*grid-template-rows: repeat(3,150px);
+            grid-template-columns: repeat(2,1fr);*/
+
+            /*grid-template-rows: repeat(1,300px);
+            grid-template-columns: repeat(2,minmax(500px,300px));*/
+
+            grid-template-rows: repeat(1,100px);
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+
+        }
+        .class{
+            background-color: black;
+            margin: 10px;
+        }
+    </style>
+    <div class="continer">
+        <h1 class="class">welcome all 1</h1>
+        <h1 class="class">welcome all 2</h1>
+        <h1 class="class">welcome all 3</h1>
+        <h1 class="class">welcome all 4</h1>
+        <h1 class="class">welcome all 5</h1>
+        <h1 class="class">welcome all 6</h1>
+    </div>
+</body>
+</html>
