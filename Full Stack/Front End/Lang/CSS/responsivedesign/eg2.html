@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .add{
+            text-align:center;
+            background-color: aquamarine;
+            margin: 30px;
+            border: 5px solid black;
+            padding: 20px;
+            display: grid;
+            gap: 10px;
+            grid-template-columns:100px 100px 1fr;
+            grid-template-rows: 80px 150px;
+            grid-template-areas: "head head2 . side""main main2 . side""footer footer footer footer";
+        }
+        .h{
+            background-color: blue;}
+    </style>
+    <div class="add">
+        <div class="h">head1</div>
+        <div class="h">head2</div>
+        <div class="h">main1</div>
+        <div class="h">main2</div>
+        <div class="h">side</div>
+        <div class="h">footer</div>
+    </div>
+</body>
+</html>
