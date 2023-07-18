@@ -1,0 +1,17 @@
+<script>
+    function* rachfoodgive(){
+        // return "once"
+        // return "twice"
+        // return "thrice"
+        yield "once"
+        yield "twice"
+        yield "thrice"
+    }
+    let rach=rachfoodgive()
+    console.log(rach.next())
+    //console.log(rach.return())
+    console.log(rach.next())
+    console.log(rach.next())
+    console.log(rach.next())
+
+</script>
