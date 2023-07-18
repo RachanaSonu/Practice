@@ -1,4 +1,4 @@
-class Idly{
+class Idly1{
     size:number
     weight:number
     color:string
@@ -15,7 +15,7 @@ class Idly{
         console.log('mediam')
     }
 }
-let rachBreakfasts=new Idly()
-rachBreakfasts.withHeadb()
-rachBreakfasts.withHeada()
-console.log(rachBreakfasts)
+let rachBreakfasts1=new Idly1()
+rachBreakfasts1.withHeadb()
+rachBreakfasts1.withHeada()
+console.log(rachBreakfasts1)
