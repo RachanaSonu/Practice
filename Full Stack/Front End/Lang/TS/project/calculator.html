@@ -1,0 +1,35 @@
+<script>
+let add=(a,b)=>{
+    return a+b
+}
+let sub=(a,b)=>{
+    return a-b
+}
+let mul=(a,b)=>{
+    return a*b
+}
+let div=(a,b)=>{
+    return a/b
+}
+let calculator=(operator,dore)=>{
+    let a=20,b=10
+    console.log(operator)
+    if(operator=='+ Addition')
+    {
+        console.log(dore(a,b))
+    }
+    if(operator=='- Subtraction'){
+        console.log(dore(a,b))
+    }
+    if (operator=='* Multipaction'){
+        console.log(dore(a,b))
+    }
+    if (operator=='/ Division'){
+        console.log(dore(a,b))
+    }
+}
+calculator("+ Addition",add)
+calculator("- Subtraction",sub)
+calculator("* Multipaction",mul)
+calculator("/ Division",div)
+</script>
