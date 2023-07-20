@@ -1,13 +1,21 @@
 <script>
     let myMoney=[100,150,100,2000,2000]
 //a=unique value,b=current value
-    let data=myMoney.reduce((a,b)=>{
-        if(!a.includes(b))
-        {
+    let data1=myMoney.reduce((a,b)=>{
+        if(a.indexOf(b)===-1){
             a.push(b)
-        }return a
-        },[])
-        console.log(data)
-        document.write(data)
+        }
+        return a
+    },[])
+    console.log(data1)
+    document.write(data1)
+
+        // if(!a.includes(b))
+        // {
+        //     a.push(b)
+        // }return a
+        // },[])
+        // console.log(data)
+        // document.write(data)
 
 </script>
