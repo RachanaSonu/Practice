@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     let add=(a,b)=>{
         return(a+b)
     }
@@ -25,9 +25,9 @@
     cal('(-) subtraction',sub)
     cal('(*) multiplication',mul)
     cal('(/) division',div)
-</script>
+</script> -->
 
-<!-- <script>
+<script>
        let add1=(a,b)=>{
         return(a+b)
     }
@@ -40,12 +40,37 @@
     let div1=(a,b)=>{
         return(a/b)
     }
-    let re1=add1(10,5)
-    let re2=sub1(10,5)
-    let re3=mul1(10,5)
-    let re4=div1(10,5)
-
-    console.log(re1,re2,re3,re4)
+    let a=10,b=50
+    let operator=((a,b,op)=>{
     
+        //console.log(operator)
+    return op(a,b)
+    })
+    console.log(`Addition:`,operator(a,b,add1))
+    console.log(`Subtraction:`,operator(a,b,sub1))
+    console.log(`Multiplication:`,operator(a,b,mul1)) 
+    console.log(`Divide:`,operator(a,b,div1))   
 
+    // let re1=add1(10,5)
+    // let re2=sub1(10,5)
+    // let re3=mul1(10,5)
+    // let re4=div1(10,5)
+    // console.log(re1,re2,re3,re4)
+</script>
+
+<!-- <script>
+    let operator1=((op)=>{
+    
+    //console.log(operator)
+return op()
+})
+let add2=()=>10+5
+let sub2=()=>10-5
+let mul2=()=>10*5
+let div2=()=>10/5
+
+    console.log(`Addition:`,operator1(add2))
+    console.log(`Subtraction:`,operator1(sub2))
+    console.log(`Multiplication:`,operator1(mul2)) 
+    console.log(`Divide:`,operator1(div2))
 </script> -->
