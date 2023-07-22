@@ -1,6 +1,7 @@
 <script>
     let myMoney=[100,150,100,2000,2000]
 //a=unique value(accumulator),b=current value
+//accumulator - the returned value of the previous iteration,currentValue - the current item in the array,index - the index of the current item,array - the original array on which reduce was called
     let data1=myMoney.reduce((a,b)=>{
         if(a.indexOf(b)===-1){
             a.push(b)
