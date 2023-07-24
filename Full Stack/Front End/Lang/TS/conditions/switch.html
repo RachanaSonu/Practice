@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <style>
+        .c {
+            text-align: center;
+            width: 250px;
+            background-color:bisque;
+            padding: 20px;
+            border: 2px solid gainsboro;
+        }
+
+        h1 {
+            color: darkgray;
+        }
+      
+    </style>
+    <center>
+        <div class="c">
+        <h1>GUESS COLORS</h1>
+        <h2 id="num"></h2>
+        <button onclick="color()">Click Me</button>
+    </div>
+    </center>
+    <script>
+        function color(){
+        let random=Math.floor(Math.random()*7+1)
+        switch (random){ 
+        case 1:
+        document.getElementById('num').innerHTML='red'
+        break;
+        case 2:
+        document.getElementById('num').innerHTML='blue'
+        break;
+        case 3:
+        document.getElementById('num').innerHTML='orange'
+        break;
+        case 4:
+        document.getElementById('num').innerHTML='yellow'
+        break;
+        case 5:
+        document.getElementById('num').innerHTML='green'
+        break;
+        case 6:
+        document.getElementById('num').innerHTML='white'
+        break;
+        case 7:
+        document.getElementById('num').innerHTML='black'
+        break;
+        }
+        console.log(guessing)}
+        
+    </script>
+</body>
+</html>

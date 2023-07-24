@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <style>
+        .c {
+            text-align: center;
+            width: 200px;
+            background-color:bisque;
+            padding: 20px;
+            border: 2px solid gainsboro;
+        }
+
+        h1 {
+            color: darkgray;
+        }
+      
+    </style>
+    <center>
+        <div class="c">
+        <h1>LUDO DICE</h1>
+        <h2 id="num"></h2>
+        <button onclick="guessing()">Click Me</button>
+    </div>
+    </center>
+    <script>
+        function guessing(){
+        let random=Math.floor(Math.random()*6+1)
+        document.getElementById('num').innerHTML=random
+        console.log(random)
+        }
+    </script>
+</body>
+</html>
