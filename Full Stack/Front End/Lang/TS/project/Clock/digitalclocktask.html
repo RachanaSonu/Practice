@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- <div id="clock"></div>
+  <script>
+    function updateClock() {
+      let now = new Date();
+      let timeString = now.toLocaleTimeString();
+      let clockElement = document.getElementById('clock');
+      clockElement.textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
+  </script> -->
+
+
+  <center><div>Digital clock</div>
+  <div id="root"></div></center>
+
+  <script>
+    let ss = 0
+    let mm = 0
+    let hh = 0
+    setInterval(() => {
+      let time = document.getElementById('root')
+      time.innerHTML = `hours:${hh} minutes:${mm} seconds:${ss++}`
+      if (ss == 5) {
+        ss = 0
+        mm++
+      }
+      if (mm == 5) {
+        mm = 0
+        hh++
+      }
+
+    }, 1000)
+
+
+  </script>
+   <!-- <script>
+    let ss = 0
+    let mm = 0
+    let hh = 0
+    setInterval(() => {
+      let time = document.getElementById('root')
+      time.innerHTML = `hours:${hh} minutes:${mm} seconds:${ss++}`
+      if (ss == 60) {
+        ss = 0
+        mm++
+      }
+      if (mm == 60) {
+        mm = 0
+        hh++
+      }
+
+    }, 1000) -->
+
+
+  </script>
+
+</body>
+
+</html>
