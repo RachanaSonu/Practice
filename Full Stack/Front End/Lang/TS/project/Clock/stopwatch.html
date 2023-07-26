@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .c {
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            border: 2px solid pink;
+            width: 300px;
+            font-size:larger;
+            font-family: 'Times New Roman';
+        }
+    </style>
+    <div class="c">
+        <div>STOPWATCH</div>
+        <!-- <span>Hours:</span><span id="hours"></span>
+    <span>Minutes:</span><span id="minutes"></span>
+    <span>Seconds:</span><span id="seconds"></span> -->
+
+        <div id="root"></div>
+        <button onclick="stopwatch.start()">Start</button>
+        <button onclick="stopwatch.stop()">Stop</button>
+        <button onclick="stopwatch.reset()">Reset</button>
+    </div>
+
+    <script>
+        function createStopwatch() {
+            let hh = 0
+            let mm = 0
+            let ss = 0
+            let intervalId = 0
+
+            function start() {
+                if (!intervalId) {
+                    intervalId = setInterval(() => {
+                        ss++
+                        if (ss == 5) {
+                            ss = 0
+                            mm++
+                            if (mm == 5) {
+                                mm = 0;
+                                hh++
+                            }
+                        }
+                        Display()
+                        //Display1()
+                    }, 500)
+                }
+            }
+
+            function stop() {
+                clearInterval(intervalId)
+                intervalId = 0
+            }
+
+            function reset() {
+                clearInterval(intervalId)
+                intervalId = 0
+                hh = 0
+                mm = 0
+                ss = 0
+                Display()
+                //Display1()
+            }
+
+            function Display() {
+                let time = document.getElementById('root')
+                time.innerHTML = `Hours:${hh} Minutes:${mm} Seconds:${ss}`
+            }
+            //     function Display1() {
+            //     document.getElementById('hours').innerText = hh;
+            //     document.getElementById('minutes').innerText = mm;
+            //     document.getElementById('seconds').innerText = ss;
+            // }
+
+            return {
+                start, stop, reset
+            };
+        }
+
+        // Create a stopwatch with initial time 0 hours, 0 minutes, and 0 seconds
+        const stopwatch = createStopwatch(0, 0, 0)
+    </script>
+</body>
+
+</html>
