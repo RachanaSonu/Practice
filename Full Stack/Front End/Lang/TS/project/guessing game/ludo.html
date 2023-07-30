@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Ludo Game</title>
+</head>
+
+<body>
+    <center>
+        <h1>Simple Ludo Game</h1>
+        <div>
+            <span>Player 1 Score: <span id="player1">0</span></span><br>
+            <button onclick="rollDice(1)">Click Player 1</button>
+        </div><br><br>
+        <div>
+            <span>Player 2 Score: <span id="player2">0</span></span><br>
+            <button onclick="rollDice(2)">Click Player 2</button>
+        </div>
+    </center>
+    <script>
+        let player1 = 0
+        let player2 = 0
+        let currentPlayer = 1
+
+        function rollDice(player) {
+            if (player === currentPlayer) {
+                const randomNumber = Math.floor(Math.random() * 6) + 1;
+                updateScore(player, randomNumber);
+            }
+        }
+
+        function updateScore(player, score) {
+            if (player1 >= 50 || player2 >= 50) {
+                return // Game already won, do nothing
+            }
+
+            if (player === 1) {
+                player1 += score;
+                document.getElementById("player1").innerText = player1
+                if (player1 >= 50) {
+                    declareWinner("Player 1")
+                    console.log()
+                }
+            } else {
+                player2 += score
+                document.getElementById("player2").innerText = player2
+                if (player2 >= 50) {
+                    declareWinner("Player 2")
+                }
+            }
+
+            togglePlayer()
+        }
+
+        function togglePlayer() {
+            currentPlayer = currentPlayer === 1 ? 2 : 1
+        }
+
+        function declareWinner(player) {
+            alert(player + " is the winner!")
+        }
+    </script>
+</body>
+
+</html>
