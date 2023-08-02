@@ -1,0 +1,9 @@
+<script>
+let rachanapromis=new Promise((fullfilled,notfullfiled)=>{
+    //fullfilled('thanks')
+    setTimeout(()=>{notfullfiled('bad')},3000)
+    
+})
+rachanapromis.then((a)=>{console.log(a)}).catch((a)=>{console.log(a)})
+console.log(rachanapromis)
+</script>
