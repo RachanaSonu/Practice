@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="click1()">Click</button>
+    <script>
+        function click1(){
+            let num=import('./add.js')
+        num.then((a)=>{
+console.log(a.add(5,3))
+        })
+        }
+        <!-- <button onclick=" iclick()">clic me</button>
+    <script>
+function iclick(){
+    let data= import('./add.js')
+       data.then((a)=>{
+console.log(a.add(5,5))
+        
+       })
+      
+}
+   -->
+        
+    </script>
+</body>
+</html>

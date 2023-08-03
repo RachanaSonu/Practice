@@ -1,4 +1,32 @@
 <script>
+    async function a() {
+        let person1 = { time: 15, prise: 100 }
+        let person2 = { time: 15, prise: 1000 }
+        let person3 = new Promise((fullfilled, notfullfilled) => {
+            setTimeout(() => {
+                fullfilled({ prise: 10000 })
+
+            }, 2000)
+        })
+        let vi = await person3
+        console.log(vi)
+        let total = person1.prise + person2.prise + vi.prise
+        console.log(total)
+    } a()
+
+    // let vi=person3.then((a)=>{
+    //     let total = person1.prise + person2.prise + person3.prise
+    //     //console.log(total)
+    //     console.log(a.prise)
+    // return a.prise})
+    // console.log("cost",vi)
+
+
+</script>
+
+
+
+<!-- <script>
     let person1 = { time: 15, prise: 100 }
     let person2 = { time: 15, prise: 1000 }
     let person3
@@ -7,8 +35,4 @@
         let total = person1.prise + person2.prise + person3.prise
         console.log(total)
     }, 2000)
-
-
-
-
-</script>
+</script> -->
