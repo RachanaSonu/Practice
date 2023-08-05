@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+      
+    </style> 
+</head>
+<body>
+    <div id="root">
+    </div>
+    <script>
+        async function apicaller() {
+            let main = document.getElementById('root')
+            let data = await (await fetch('https://api.github.com/users')).json()
+
+            data.map((a)=>{
+                let cc=document.createElement('div')
+                //cc.classList.add('data')
+                cc.style.display='inline-block'
+                //let products=document.createElement('div')
+                let id=document.createElement('P')
+                id.textContent=`${a.id}`
+                main.appendChild(id)
+
+                let login=document.createElement('h3')
+                login.textContent=`${a.login}`
+                main.appendChild(login)
+
+                let node_id=document.createElement('P')
+                node_id.textContent=`${a.node_id}`
+                main.appendChild(node_id)
+
+                let avatar_url=document.createElement('P')
+                avatar_url.textContent=`${a.avatar_url}`
+                main.appendChild(avatar_url)
+
+                let url=document.createElement('P')
+                url.textContent=`${a.url}`
+                main.appendChild(url)
+
+                let html_url=document.createElement('h3')
+                html_url.textContent=`${a.html_url}`
+                main.appendChild(html_url)
+
+                
+                main.appendChild(cc)
+
+                //main.appendChild(document.createElement('br'))
+                
+                console.log(a.id)
+            console.log(a.login)
+console.log(a.node_id)
+console.log(a.avatar_url)
+console.log(a.url)
+console.log(a.html_url)
+//console.log(a.category)
+            })
+        }
+        apicaller()
+    </script>
+</body>
+</html>
