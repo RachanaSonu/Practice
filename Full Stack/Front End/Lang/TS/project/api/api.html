@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+    </div>
+    <script>
+ async function apicaller(){
+    let main=document.getElementById('root')
+            let data=fetch('https://fakestoreapi.com/products')
+            data=await(await data).json()
+            // data.map((b)=>{
+            //     let title=document.innerHTM="<h1>{b.title}</h1>"
+            //     main.append(title)
+            //     console.log(b.title)
+            //     //document.write(b.title)
+            // })
+        //     data.map((b)=>{
+        //         let title=document.createElement('h1')
+        //         main.textContent=`${b.title}`
+        //    // h1.=`${b.title}`
+        //     main.appendChild(main)
+        //     console.log(b.title)
+        //     })
+            
+
+            data.map((a)=>{
+                //let products=document.createElement('div')
+                let id=document.createElement('P')
+                id.textContent=`${a.id}`
+                main.appendChild(id)
+
+                let title=document.createElement('h3')
+                title.textContent=`${a.title}`
+                main.appendChild(title)
+
+                let img=document.createElement('img')
+                img.src=`${a.image}`
+                main.appendChild(img)
+                img.style.width='200px'
+                //img.style.height='300px'
+
+                let description=document.createElement('P')
+                description.textContent=`${a.description}`
+                main.appendChild(description)
+
+                let price=document.createElement('P')
+                price.textContent=`Rs.${a.price}`
+                main.appendChild(price)
+
+                let rating=document.createElement('P')
+                rating.textContent=`${a.rating}`
+                main.appendChild(rating)
+
+                let category=document.createElement('h3')
+                category.textContent=`${a.category}`
+                main.appendChild(category)
+                
+
+            //     let prise=document.createElement('p')
+            //     prise.textContent=`${a.prise}`
+
+            // products.appendChild(title)
+            // products.appendChild(img)
+            // products.appendChild(p)
+
+            //main.appendChild(products)
+
+            console.log(a.id)
+            console.log(a.image)
+console.log(a.title)
+console.log(a.price)
+console.log(a.description)
+console.log(a.rating)
+console.log(a.category)
+
+
+            })
+           
+          
+            //console.log(data)
+        }
+        apicaller()
+
+       
+    </script>
+</body>
+</html>

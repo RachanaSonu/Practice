@@ -1,0 +1,372 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #root {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    /* Style for each product item */
+    .pp {
+        width: 200px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    /* Style for the product image */
+    .pp img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+    }
+    </style>
+</head>
+<body>
+    <div id="root">
+    </div>
+    <script>
+        async function apicaller(){
+           let main=document.getElementById('root')
+                   let data=fetch('https://fakestoreapi.com/products')
+                   data=await(await data).json()
+                   // data.map((b)=>{
+                   //     let title=document.innerHTM="<h1>{b.title}</h1>"
+                   //     main.append(title)
+                   //     console.log(b.title)
+                   //     //document.write(b.title)
+                   // })
+               //     data.map((b)=>{
+               //         let title=document.createElement('h1')
+               //         main.textContent=`${b.title}`
+               //    // h1.=`${b.title}`
+               //     main.appendChild(main)
+               //     console.log(b.title)
+               //     })
+                   
+       
+                   data.map((a)=>{
+                    let pp=document.createElement('div')
+                    pp.classList.add('pp1')
+                       //let products=document.createElement('div')
+                       let id=document.createElement('P')
+                       id.textContent=`${a.id}`
+                       pp.appendChild(id)
+       
+                       let title=document.createElement('h3')
+                       title.textContent=`${a.title}`
+                       pp.appendChild(title)
+       
+                       let img=document.createElement('img')
+                       img.src=`${a.image}`
+                       pp.appendChild(img)
+                       img.style.width='200px'
+                       //img.style.height='300px'
+       
+                       let description=document.createElement('P')
+                       description.textContent=`${a.description}`
+                       pp.appendChild(description)
+       
+                       let price=document.createElement('P')
+                       price.textContent=`Rs.${a.price}`
+                       pp.appendChild(price)
+       
+                       let rating=document.createElement('P')
+                       rating.textContent=`${a.rating}`
+                       pp.appendChild(rating)
+       
+                       let category=document.createElement('h3')
+                       category.textContent=`${a.category}`
+                       pp.appendChild(category)
+                       
+       
+                   //     let prise=document.createElement('p')
+                   //     prise.textContent=`${a.prise}`
+       
+                   // products.appendChild(title)
+                   // products.appendChild(img)
+                   // products.appendChild(p)
+       
+                   //main.appendChild(products)
+       
+                   main.appendChild(pp)
+                   console.log(a.id)
+                   console.log(a.image)
+       console.log(a.title)
+       console.log(a.price)
+       console.log(a.description)
+       console.log(a.rating)
+       console.log(a.category)
+       
+       
+                   })
+                  
+                 
+                   //console.log(data)
+               }
+               apicaller()
+       
+              
+           </script>
+    <!-- <script>
+ async function apicaller(){
+    let main=document.getElementById('root')
+            let data=fetch('https://fakestoreapi.com/products')
+            data=await(await data).json()
+            // data.map((b)=>{
+            //     let title=document.innerHTM="<h1>{b.title}</h1>"
+            //     main.append(title)
+            //     console.log(b.title)
+            //     //document.write(b.title)
+            // })
+        //     data.map((b)=>{
+        //         let title=document.createElement('h1')
+        //         main.textContent=`${b.title}`
+        //    // h1.=`${b.title}`
+        //     main.appendChild(main)
+        //     console.log(b.title)
+        //     })
+        for(let a of data){
+            let id=document.createElement('P')
+                id.textContent=`${a.id}`
+                main.appendChild(id)
+
+                let title=document.createElement('h3')
+                title.textContent=`${a.title}`
+                main.appendChild(title)
+
+                let img=document.createElement('img')
+                img.src=`${a.image}`
+                main.appendChild(img)
+                img.style.width='200px'
+                //img.style.height='300px'
+
+                let description=document.createElement('P')
+                description.textContent=`${a.description}`
+                main.appendChild(description)
+
+                let price=document.createElement('P')
+                price.textContent=`Rs.${a.price}`
+                main.appendChild(price)
+
+                let rating=document.createElement('P')
+                rating.textContent=`${a.rating}`
+                main.appendChild(rating)
+
+                let category=document.createElement('h3')
+                category.textContent=`${a.category}`
+                main.appendChild(category)
+                
+        }
+            
+
+            //data.map((a)=>{
+                //let products=document.createElement('div')
+                
+
+            //     let prise=document.createElement('p')
+            //     prise.textContent=`${a.prise}`
+
+            // products.appendChild(title)
+            // products.appendChild(img)
+            // products.appendChild(p)
+
+            //main.appendChild(products)
+
+//             console.log(a.id)
+//             console.log(a.image)
+// console.log(a.title)
+// console.log(a.price)
+// console.log(a.description)
+// console.log(a.rating)
+// console.log(a.category)
+
+
+            }
+           
+          
+            //console.log(data)
+        
+        apicaller()
+
+       
+    </script> -->
+<!-- </body>
+</html> --> 
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Style for the container div */
+        #root {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        /* Style for each product item */
+        .product {
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        /* Style for the product image */
+        .product img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+    </div>
+    <script>
+    async function apicaller(){
+        let main = document.getElementById('root');
+        let data = await (await fetch('https://fakestoreapi.com/products')).json();
+        
+        for (let a of data) {
+            // Create a container div for each product item
+            let productDiv = document.createElement('div');
+            productDiv.classList.add('product');
+
+            let id = document.createElement('h1');
+            id.textContent = `${a.id}`;
+            productDiv.appendChild(id);
+
+            let title = document.createElement('h2');
+            title.textContent = `${a.title}`;
+            productDiv.appendChild(title);
+
+            let img = document.createElement('img');
+            img.src = `${a.image}`;
+            productDiv.appendChild(img);
+
+            let description = document.createElement('P');
+            description.textContent = `${a.description}`;
+            productDiv.appendChild(description);
+
+            let price = document.createElement('h3');
+            price.textContent = `Rs.${a.price}`;
+            productDiv.appendChild(price);
+
+            let rating = document.createElement('P');
+            rating.textContent = `${a.rating}`;
+            productDiv.appendChild(rating);
+
+            let category = document.createElement('h3');
+            category.textContent = `${a.category}`;
+            productDiv.appendChild(category);
+
+            main.appendChild(productDiv);
+        }
+    }
+    apicaller();
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Style for the container div */
+        #root {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        /* Style for each product item */
+        .product {
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        /* Style for the product image */
+        .product img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+    </div>
+    <script>
+        async function apicaller() {
+            let main = document.getElementById('root')
+            let data = await (await fetch('https://fakestoreapi.com/products')).json()
+
+            data.map((a) => {
+                let productDiv = document.createElement('div')
+                productDiv.classList.add('product')
+
+                let id = document.createElement('h2')
+                id.textContent = `${a.id}`
+                productDiv.appendChild(id)
+
+                let title = document.createElement('h3')
+                title.textContent = `${a.title}`
+                productDiv.appendChild(title)
+
+                let img = document.createElement('img')
+                img.src = `${a.image}`
+                productDiv.appendChild(img)
+
+                let description = document.createElement('P')
+                description.textContent = `${a.description}`
+                productDiv.appendChild(description)
+
+                let price = document.createElement('h4')
+                price.textContent = `Rs.${a.price}`
+                productDiv.appendChild(price)
+
+                let rating = document.createElement('P')
+
+                if(a.rating && a.rating.rate && a.rating.count){
+                    rating.innerHTML=`Rate:${a.rating.rate} Count:${a.rating.count}`
+                }
+                    else{
+                        rating.textContent=`${a.rating}`
+
+                    }
+                
+                // rating.textContent = `${a.rating}`
+                 productDiv.appendChild(rating)
+
+                let category = document.createElement('h3')
+                category.textContent = `${a.category}`
+                productDiv.appendChild(category)
+
+                main.appendChild(productDiv)
+                console.log(a.id)
+                console.log(a.image)
+                console.log(a.title)
+                console.log(a.price)
+                console.log(a.description)
+                console.log(a.rating)
+                console.log(a.category)
+            })
+        }
+        apicaller()
+    </script>
+</body>
+</html>

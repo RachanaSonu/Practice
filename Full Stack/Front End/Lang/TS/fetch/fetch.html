@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ async function apicaller(){
+            let data=fetch('https://fakestoreapi.com/products')
+            data=await(await data).json()
+            
+            console.log(data)
+        }
+        apicaller()
+
+        // function apicaller(){
+        //     let data=fetch('https://fakestoreapi.com/products')
+        //     .then((a)=>{return a.json()})
+        //     .then((a)=>{console.log(a)})
+        //     console.log(data)
+        // }
+        // apicaller()
+    </script>
+</body>
+</html>
