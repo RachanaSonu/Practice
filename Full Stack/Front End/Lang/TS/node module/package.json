@@ -1,0 +1,14 @@
+{
+  "name": "node-module",
+  "version": "1.0.0",
+  "description": "testing npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rachana apponix",
+  "license": "ISC",
+  "dependencies": {
+    "base64-encode-file": "^1.0.7"
+  }
+}
