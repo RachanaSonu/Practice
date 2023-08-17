@@ -1,11 +1,12 @@
 // export const App:React.FC=()=>{
 
-import { BrowserRouter,Route,Routes } from "react-router-dom"
+//import { BrowserRouter,Route,Routes } from "react-router-dom"
+import { BrowserRouter} from "react-router-dom"
 // import { Home } from "./pages/home/Home"
 // import { Lessons } from "./pages/lessons/Lessons"
 // import { Login } from "./pages/login/Login"
 // import { Register } from "./pages/register/Register"
-import { Nav } from "./component/navbar/Nav"
+//import { Nav } from "./component/navbar/Nav"
 import { Allroutes } from "./routes"
 
   
@@ -31,7 +32,7 @@ import { Allroutes } from "./routes"
 
 export const App:React.FC=()=>{
 
-  return<div>
+  return<>
 
 <BrowserRouter><Allroutes/>
 
@@ -50,5 +51,5 @@ export const App:React.FC=()=>{
   <Register/>
   <Lessons/> */}
 
-  </div>
+  </>
 }

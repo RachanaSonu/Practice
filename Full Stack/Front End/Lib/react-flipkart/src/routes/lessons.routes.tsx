@@ -1,23 +1,29 @@
 import { Outlet } from "react-router-dom";
-import { Nav } from "../component/navbar/Nav";
+//import { Nav } from "../component/navbar/Nav";
+import Lessons from "../pages/lessons/Lessons";
+
 
 
 export let LessonsRoutes = {
 
     path: '/lessons',
-    element: <div><Nav/><Outlet/></div>,
+    element: <div><Outlet/></div>,
     children: [
         {
-            path: 'home',
-            element: <h1>Home</h1>
+            path: 'all',
+            element: <Lessons/>
         },
-        {
-            path: 'login',
-            element: <h1>login</h1>
-        },
-        {
-            path: 'register',
-            element: <h1>register</h1>
-        }
+        // {
+        //     path: 'home',
+        //     element: <h1>Home</h1>
+        // },
+        // {
+        //     path: 'login',
+        //     element: <h1>login</h1>
+        // },
+        // {
+        //     path: 'register',
+        //     element: <h1>register</h1>
+        // }
     ]
 }
