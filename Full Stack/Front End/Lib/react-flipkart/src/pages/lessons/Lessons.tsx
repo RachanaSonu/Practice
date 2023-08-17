@@ -86,7 +86,52 @@ export default function BasicTabs() {
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
       
-      <h1>Buttons</h1>
+      <h1>Autocomplete</h1>
+<p>The autocomplete is a normal text input enhanced by a panel of suggested options.</p>
+<Myautocomplete/>
+
+<h1>Switch</h1>
+<p>Switches toggle the state of a single setting on or off.</p>
+<Myswitch/>
+
+<h1>Toggle Button </h1>
+    <p>A Toggle Button can be used to group related options.</p>
+    <Mytoggle/>
+
+      
+      <h1>Image List</h1>
+The Image List displays a collection of images in an organized grid.
+<Myimage/>
+
+
+<h1>Avatar</h1>
+<p>Avatars are found throughout material design with uses in everything from tables to dialog menus.</p>
+<Myavatars/>
+
+<h1>Checkbox</h1>
+<p>Checkboxes allow the user to select one or more items from a set.</p>
+        <Mycheckbox/>
+        
+        <h1>Radio</h1>
+        <p>The Radio Group allows the user to select one option from a set.</p>
+        <Myradio/>
+
+
+<h1>Button Group</h1>
+<p>The ButtonGroup component can be used to group related buttons.</p>
+<MyButtonGroup/>
+
+
+
+<h1>Speed Dial</h1>
+<p>When pressed, a floating action button can display three to six related actions in the form of a Speed Dial.</p>
+<Myspeeddial/>
+
+<h1>Stack</h1>
+<p>Stack is a container component for arranging elements vertically or horizontally.</p>
+<Mystack/>
+
+<h1>Buttons</h1>
         <p>Buttons allow users to take actions, and make choices, with a single tap.</p>
         <Mybuttons/>
         
@@ -98,46 +143,6 @@ export default function BasicTabs() {
         <p>Ratings provide insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own.</p>
         <Myrating/>
 
-
-<h1>Checkbox</h1>
-<p>Checkboxes allow the user to select one or more items from a set.</p>
-        <Mycheckbox/>
-        
-        <h1>Radio</h1>
-        <p>The Radio Group allows the user to select one option from a set.</p>
-        <Myradio/>
-
-    <h1>Toggle Button </h1>
-    <p>A Toggle Button can be used to group related options.</p>
-    <Mytoggle/>
-
-<h1>Switch</h1>
-<p>Switches toggle the state of a single setting on or off.</p>
-<Myswitch/>
-
-<h1>Autocomplete</h1>
-<p>The autocomplete is a normal text input enhanced by a panel of suggested options.</p>
-<Myautocomplete/>
-
-<h1>Button Group</h1>
-<p>The ButtonGroup component can be used to group related buttons.</p>
-<MyButtonGroup/>
-
-<h1>Avatar</h1>
-<p>Avatars are found throughout material design with uses in everything from tables to dialog menus.</p>
-<Myavatars/>
-
-<h1>Image List</h1>
-The Image List displays a collection of images in an organized grid.
-<Myimage/>
-
-<h1>Speed Dial</h1>
-<p>When pressed, a floating action button can display three to six related actions in the form of a Speed Dial.</p>
-<Myspeeddial/>
-
-<h1>Stack</h1>
-<p>Stack is a container component for arranging elements vertically or horizontally.</p>
-<Mystack/>
 
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
