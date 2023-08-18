@@ -1,7 +1,5 @@
 import { FormControl, FormLabel, Radio, RadioGroup } from "@mui/material"
-import FormControlLabel, {
-  FormControlLabelProps,
-} from '@mui/material/FormControlLabel';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 export const Myradio: React.FC<{}> = () => {
   return <><RadioGroup name="use-radio-group" defaultValue="first">

@@ -28,6 +28,8 @@ import { Myavatars } from '../../component/avatars/Myavatars.com';
 import { Myimage } from '../../component/imagelist/Myimage.com';
 import { Myspeeddial } from '../../component/speed dial/Myspeeddial.com';
 import { Mystack } from '../../component/Stack/Mystack.com';
+import { Myprop } from '../../component/prop/Myprop.com';
+import { Myhook } from '../../component/hook/Myhook.com';
 
 
 interface TabPanelProps {
@@ -56,12 +58,7 @@ function CustomTabPanel(props: TabPanelProps) {
   );
 }
 
-function a11yProps(index: number) {
-  return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-  };
-}
+
 
 export const Lessons: React.FC<{}> = () => {
   const [value, setValue] = React.useState(0);
@@ -74,9 +71,10 @@ export const Lessons: React.FC<{}> = () => {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Fragement" {...a11yProps(0)} />
-          <Tab label="Component" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="Fragement" />
+          <Tab label="Component" />
+          <Tab label="Props(gift)" />
+          <Tab label="Hooks" />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
@@ -139,7 +137,30 @@ export const Lessons: React.FC<{}> = () => {
 
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        Item Three
+        <h1>Props</h1>
+        <p>Props stand for "Properties." They are read-only components. It is an object which stores the value of attributes of a tag and work similar to the HTML attributes. It gives a way to pass data from one component to other components. It is similar to function arguments. Props are passed to the component in the same way as arguments passed in a function.
+
+          Props are immutable so we cannot modify the props from inside the component. Inside the components, we can add attributes called props. These attributes are available in the component as this.props and can be used to render dynamic data in our render method.
+
+          When you need immutable data in the component, you have to add props to reactDom.render() method in the main.js file of your ReactJS project and used it inside the component in which you need. </p>
+        <Myprop />
+      </CustomTabPanel>
+
+      <CustomTabPanel value={value} index={3}>
+        <h1>Hooks</h1>
+        <p>React Hooks are simple JavaScript functions that we can use to isolate the reusable part from a functional component. Hooks can be stateful and can manage side-effects.
+          React provides a bunch of standard in-built hooks: <br />
+
+          useState: To manage states. Returns a stateful value and an updater function to update it. <br /> <br />
+          useEffect: To manage side-effects like API calls, subscriptions, timers, mutations, and more. <br /> <br />
+          useContext: To return the current value for a context. <br /> <br />
+          useReducer: A useState alternative to help with complex state management. <br /> <br />
+          useCallback: It returns a memorized version of a callback to help a child component not re-render unnecessarily. <br /> <br />
+          useMemo: It returns a memoized value that helps in performance optimizations. <br /> <br />
+          useRef: It returns a ref object with a .current property. The ref object is mutable. It is mainly used to access a child component imperatively. <br /> <br />
+          useLayoutEffect: It fires at the end of all DOM mutations. It's best to use useEffect as much as possible over this one as the useLayoutEffect fires synchronously. <br /><br />
+          useDebugValue: Helps to display a label in React DevTools for custom hooks.</p>
+        <Myhook />
       </CustomTabPanel>
     </Box>
   );
