@@ -19,7 +19,7 @@ let handleclick=()=>{
 
     {/* interview question */}
     <input type="text" onChange={(e)=>{console.log(e.target.value);setVal(e.target.value)}} /><br/>
-    <Button onClick={handleclick}>Click Me</Button>
+    <Button onClick={handleclick}>Click Me</Button> <br />
     {val}
     </>
 }
