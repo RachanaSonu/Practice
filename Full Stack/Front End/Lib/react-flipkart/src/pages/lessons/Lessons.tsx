@@ -14,7 +14,6 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-
 import { Fragement } from '../../component/fragement/Fragement.com';
 import { Mybuttons } from '../../component/mybuttons/Mybuttons.com';
 import { Flaoating } from '../../component/flaoatingbutton/Flaoating.com';
@@ -64,7 +63,7 @@ function a11yProps(index: number) {
   };
 }
 
-export default function BasicTabs() {
+export const Lessons: React.FC<{}> = () => {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -82,67 +81,61 @@ export default function BasicTabs() {
       </Box>
       <CustomTabPanel value={value} index={0}>
         <h1>Fragement</h1>
-        <Fragement/>
+        <Fragement />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-      
-      <h1>Autocomplete</h1>
-<p>The autocomplete is a normal text input enhanced by a panel of suggested options.</p>
-<Myautocomplete/>
 
-<h1>Switch</h1>
-<p>Switches toggle the state of a single setting on or off.</p>
-<Myswitch/>
+        <h1>Autocomplete</h1>
+        <p>The autocomplete is a normal text input enhanced by a panel of suggested options.</p>
+        <Myautocomplete />
 
-<h1>Toggle Button </h1>
-    <p>A Toggle Button can be used to group related options.</p>
-    <Mytoggle/>
+        <h1>Switch</h1>
+        <p>Switches toggle the state of a single setting on or off.</p>
+        <Myswitch />
 
-      
-      <h1>Image List</h1>
-The Image List displays a collection of images in an organized grid.
-<Myimage/>
+        <h1>Speed Dial</h1>
+        <p>When pressed, a floating action button can display three to six related actions in the form of a Speed Dial.</p>
+        <Myspeeddial />
 
+        <h1>Toggle Button </h1>
+        <p>A Toggle Button can be used to group related options.</p>
+        <Mytoggle />
 
-<h1>Avatar</h1>
-<p>Avatars are found throughout material design with uses in everything from tables to dialog menus.</p>
-<Myavatars/>
+        <h1>Image List</h1>
+        The Image List displays a collection of images in an organized grid.
+        <Myimage />
 
-<h1>Checkbox</h1>
-<p>Checkboxes allow the user to select one or more items from a set.</p>
-        <Mycheckbox/>
-        
+        <h1>Avatar</h1>
+        <p>Avatars are found throughout material design with uses in everything from tables to dialog menus.</p>
+        <Myavatars />
+
+        <h1>Checkbox</h1>
+        <p>Checkboxes allow the user to select one or more items from a set.</p>
+        <Mycheckbox />
+
         <h1>Radio</h1>
         <p>The Radio Group allows the user to select one option from a set.</p>
-        <Myradio/>
+        <Myradio />
 
+        <h1>Button Group</h1>
+        <p>The ButtonGroup component can be used to group related buttons.</p>
+        <MyButtonGroup />
 
-<h1>Button Group</h1>
-<p>The ButtonGroup component can be used to group related buttons.</p>
-<MyButtonGroup/>
+        <h1>Stack</h1>
+        <p>Stack is a container component for arranging elements vertically or horizontally.</p>
+        <Mystack />
 
-
-
-<h1>Speed Dial</h1>
-<p>When pressed, a floating action button can display three to six related actions in the form of a Speed Dial.</p>
-<Myspeeddial/>
-
-<h1>Stack</h1>
-<p>Stack is a container component for arranging elements vertically or horizontally.</p>
-<Mystack/>
-
-<h1>Buttons</h1>
+        <h1>Buttons</h1>
         <p>Buttons allow users to take actions, and make choices, with a single tap.</p>
-        <Mybuttons/>
-        
-<h1>Floating Buttons</h1>
-<p>A Floating Action Button (FAB) performs the primary, or most common, action on a screen.</p>
-        <Flaoating/>
+        <Mybuttons />
+
+        <h1>Floating Buttons</h1>
+        <p>A Floating Action Button (FAB) performs the primary, or most common, action on a screen.</p>
+        <Flaoating />
 
         <h1>Rating</h1>
         <p>Ratings provide insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own.</p>
-        <Myrating/>
-
+        <Myrating />
 
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>

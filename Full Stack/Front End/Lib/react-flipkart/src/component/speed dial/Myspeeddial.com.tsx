@@ -5,13 +5,13 @@ import PrintIcon from '@mui/icons-material/Print';
 import ShareIcon from '@mui/icons-material/Share';
 
 const actions = [
-    { icon: <FileCopyIcon />, name: 'Copy' },
-    { icon: <SaveIcon />, name: 'Save' },
-    { icon: <PrintIcon />, name: 'Print' },
-    { icon: <ShareIcon />, name: 'Share' },
-  ];
-export const Myspeeddial:React.FC<{}>=()=>{
-    return<><SpeedDial
+  { icon: <FileCopyIcon />, name: 'Copy' },
+  { icon: <SaveIcon />, name: 'Save' },
+  { icon: <PrintIcon />, name: 'Print' },
+  { icon: <ShareIcon />, name: 'Share' },
+];
+export const Myspeeddial: React.FC<{}> = () => {
+  return <><SpeedDial
     ariaLabel="SpeedDial basic example"
     sx={{ position: 'absolute', bottom: 16, right: 16 }}
     icon={<SpeedDialIcon />}

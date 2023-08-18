@@ -1,7 +1,7 @@
 import { ToggleButton, ToggleButtonGroup } from "@mui/material"
 
-export const Mytoggle:React.FC<{}>=()=>{
-    return <><ToggleButtonGroup
+export const Mytoggle: React.FC<{}> = () => {
+  return <><ToggleButtonGroup
     color="primary"
     //value={alignment}
     exclusive
