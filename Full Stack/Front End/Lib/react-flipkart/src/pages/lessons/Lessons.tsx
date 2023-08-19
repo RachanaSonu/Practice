@@ -169,7 +169,7 @@ export const Lessons: React.FC<{}> = () => {
 
       <CustomTabPanel value={value} index={4}>
         <h1>Strick Mode</h1>
-        <p></p>
+        <p>StrictMode is a React Developer Tool primarily used for highlighting possible problems in a web application. It activates additional deprecation checks and warnings for its child components(because of this values are printed twice in console).</p>
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={5}>
