@@ -30,6 +30,8 @@ import { Myspeeddial } from '../../component/speed dial/Myspeeddial.com';
 import { Mystack } from '../../component/Stack/Mystack.com';
 import { Myprop } from '../../component/prop/Myprop.com';
 import { Myhook } from '../../component/hook/Myhook.com';
+import { Normalcss } from '../../component/CSS/Normalcss.com';
+import { Css_container } from '../../component/CSS/Css_container.com';
 
 
 interface TabPanelProps {
@@ -75,6 +77,8 @@ export const Lessons: React.FC<{}> = () => {
           <Tab label="Component" />
           <Tab label="Props(gift)" />
           <Tab label="Hooks" />
+          <Tab label="Strick Mode" />
+          <Tab label="CSS" />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
@@ -162,6 +166,18 @@ export const Lessons: React.FC<{}> = () => {
           useDebugValue: Helps to display a label in React DevTools for custom hooks.</p>
         <Myhook />
       </CustomTabPanel>
+
+      <CustomTabPanel value={value} index={4}>
+        <h1>Strick Mode</h1>
+        <p></p>
+      </CustomTabPanel>
+
+      <CustomTabPanel value={value} index={5}>
+        <h1>Different ways of CSS</h1>
+        <p></p>
+        <Css_container/>
+      </CustomTabPanel>
+    
     </Box>
   );
 }
