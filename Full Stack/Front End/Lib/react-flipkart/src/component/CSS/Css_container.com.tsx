@@ -28,7 +28,7 @@ export const Css_container:React.FC<{}>=()=> {
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
             Normal CSS
           </Typography>
-          <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography>
+          <Typography sx={{ color: 'text.secondary' }}>Normal CSS with id and different css style file</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -44,7 +44,7 @@ export const Css_container:React.FC<{}>=()=> {
         >
           <Typography sx={{ width: '33%', flexShrink: 0 }}>WithJSCss</Typography>
           <Typography sx={{ color: 'text.secondary' }}>
-            You are currently not an owner
+            With Javascript and css style inline
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -63,7 +63,7 @@ export const Css_container:React.FC<{}>=()=> {
           InternalCsswithJS
           </Typography>
           <Typography sx={{ color: 'text.secondary' }}>
-            Filtering has been entirely disabled for whole web server
+          With Javascript and css style inpage
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -79,6 +79,9 @@ export const Css_container:React.FC<{}>=()=> {
           id="panel4bh-header"
         >
           <Typography sx={{ width: '33%', flexShrink: 0 }}>ExternalCsswithJS</Typography>
+          <Typography sx={{ color: 'text.secondary' }}>
+          With Javascript and css style external
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

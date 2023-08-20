@@ -13,25 +13,30 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-
-import { Fragement } from '../../component/fragement/Fragement.com';
-import { Mybuttons } from '../../component/mybuttons/Mybuttons.com';
-import { Flaoating } from '../../component/flaoatingbutton/Flaoating.com';
-import { Myrating } from '../../component/rating/Myrating.com';
-import { Mycheckbox } from '../../component/Checkbox/Mycheckbox.com';
-import { Myradio } from '../../component/Myradio/Myradio.com';
-import { Mytoggle } from '../../component/toggle/Mytoggle.com';
-import { Myswitch } from '../../component/switches/Myswitch.com';
-import { Myautocomplete } from '../../component/autocomplete/Myautocomplete.com';
-import { MyButtonGroup } from '../../component/buttingroups/MyButtongroup.com';
-import { Myavatars } from '../../component/avatars/Myavatars.com';
-import { Myimage } from '../../component/imagelist/Myimage.com';
-import { Myspeeddial } from '../../component/speed dial/Myspeeddial.com';
-import { Mystack } from '../../component/Stack/Mystack.com';
-import { Myprop } from '../../component/prop/Myprop.com';
-import { Myhook } from '../../component/hook/Myhook.com';
-import { Normalcss } from '../../component/CSS/Normalcss.com';
+import { Flaoating, Fragement, MyButtonGroup, Myautocomplete, Myavatars, Mybuttons, Mycheckbox, Myhook, Myimage, Myprop, Myradio, Myrating, Myspeeddial, Mystack, Myswitch, Mytoggle } from '../../component/entry';
 import { Css_container } from '../../component/CSS/Css_container.com';
+import { Myevent } from '../../component/events/Myevent.com';
+import { Mycondition } from '../../component/Myconditions/Mycondition.com';
+import { Myform } from '../../component/formik/Myform.com';
+
+// import { Fragement } from '../../component/fragement/Fragement.com';
+// import { Mybuttons } from '../../component/mybuttons/Mybuttons.com';
+// import { Flaoating } from '../../component/flaoatingbutton/Flaoating.com';
+// import { Myrating } from '../../component/rating/Myrating.com';
+// import { Mycheckbox } from '../../component/Checkbox/Mycheckbox.com';
+// import { Myradio } from '../../component/Myradio/Myradio.com';
+// import { Mytoggle } from '../../component/toggle/Mytoggle.com';
+// import { Myswitch } from '../../component/switches/Myswitch.com';
+// import { Myautocomplete } from '../../component/autocomplete/Myautocomplete.com';
+// import { MyButtonGroup } from '../../component/buttingroups/MyButtongroup.com';
+// import { Myavatars } from '../../component/avatars/Myavatars.com';
+// import { Myimage } from '../../component/imagelist/Myimage.com';
+// import { Myspeeddial } from '../../component/speed dial/Myspeeddial.com';
+// import { Mystack } from '../../component/Stack/Mystack.com';
+// import { Myprop } from '../../component/prop/Myprop.com';
+// import { Myhook } from '../../component/hook/Myhook.com';
+// import { Normalcss } from '../../component/CSS/Normalcss.com';
+// import { Css_container } from '../../component/CSS/Css_container.com';
 
 
 interface TabPanelProps {
@@ -79,6 +84,9 @@ export const Lessons: React.FC<{}> = () => {
           <Tab label="Hooks" />
           <Tab label="Strick Mode" />
           <Tab label="CSS" />
+          <Tab label="Events" />
+          <Tab label="Condition" />
+          <Tab label="Formik" />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
@@ -153,7 +161,7 @@ export const Lessons: React.FC<{}> = () => {
       <CustomTabPanel value={value} index={3}>
         <h1>Hooks</h1>
         <p>React Hooks are simple JavaScript functions that we can use to isolate the reusable part from a functional component. Hooks can be stateful and can manage side-effects.
-          React provides a bunch of standard in-built hooks: <br />
+          React provides a bunch of standard in-built hooks: <br /><br />
 
           useState: To manage states. Returns a stateful value and an updater function to update it. <br /> <br />
           useEffect: To manage side-effects like API calls, subscriptions, timers, mutations, and more. <br /> <br />
@@ -178,6 +186,22 @@ export const Lessons: React.FC<{}> = () => {
         <Css_container/>
       </CustomTabPanel>
     
+      <CustomTabPanel value={value} index={6}>
+        <h1>Events</h1>
+        <p>An event is an action that could be triggered as a result of the user action or system generated event.<br/>use of event enables a user to interact with a webpage and take specified action whenever an event, like a click or a hover, takes place. <br /><br />onClick - used for handling click events on elements like buttons, links, etc. javascript. <br /><br />onChange - used for handling input changes such as typed text or selected option values. <br /><br />onBlur triggers when focus is lost from the input element in context.</p>
+        <Myevent/>
+      </CustomTabPanel>
+
+      <CustomTabPanel value={value} index={7}>
+        <h1>Condition</h1>
+        <Mycondition/>
+      </CustomTabPanel>
+
+      <CustomTabPanel value={value} index={8}>
+        <h1>Formik</h1>
+        <p>Formik is a popular open-source library for building and processing form data in React applications.</p>
+        <Myform/>
+      </CustomTabPanel>
     </Box>
   );
 }
