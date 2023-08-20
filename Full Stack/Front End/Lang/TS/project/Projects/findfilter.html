@@ -1,7 +1,7 @@
 <script>
 
 let hospital=[
-{Hospital_Name:'Narayana Hrudayalaya',F_Name:'Devi',L_Name:'Shetty',Education:'M.D',Age:70,Place:'Jayanagar',Departement:'Cardiologist',Experience:45,Designation:'Chairman,Surgeon'},
+{Hospital_Name:'Narayana Hrudayalaya',F_Name:'Devi',L_Name:'Shetty',Education:'M.D',Age:10,Place:'Jayanagar',Departement:'Cardiologist',Experience:45,Designation:'Chairman,Surgeon'},
 
 {Hospital_Name:'Narayana Nethralaya',F_Name:'Bhujang',L_Name:'Shetty',Education:'M.D',Age:69,Place:'Rajajinagar',Departement:'Opthalmologist',Experience:40,Designation:'Chairman'},
 
@@ -31,7 +31,8 @@ let data=hospital.filter((var1)=>{return var1.Experience>=25})
 //let data=people.find((Vall)=>{return Vall.quality2=='intelligent'})
 //let data=hospital.find((rr)=>{return rr.Place=='RR Nagar'})
 //let data=hospital.find((varr)=>{return varr.Education=='M.B.B.S'})
-let data1=hospital.find((varr)=>{return varr.F_Name=='Rachana'})
+//let data1=hospital.find((varr)=>{return varr.F_Name=='Rachana'})
+let data1=hospital.find((varr)=>{return varr.Age>=69})
 console.log(data)
 console.log(data1)
 </script>
