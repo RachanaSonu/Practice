@@ -18,6 +18,7 @@ import { Css_container } from '../../component/CSS/Css_container.com';
 import { Myevent } from '../../component/events/Myevent.com';
 import { Mycondition } from '../../component/Myconditions/Mycondition.com';
 import { Myform } from '../../component/formik/Myform.com';
+import { Table } from '../../component/AG grid/Table';
 
 // import { Fragement } from '../../component/fragement/Fragement.com';
 // import { Mybuttons } from '../../component/mybuttons/Mybuttons.com';
@@ -87,6 +88,7 @@ export const Lessons: React.FC<{}> = () => {
           <Tab label="Events" />
           <Tab label="Condition" />
           <Tab label="Formik" />
+          <Tab label="Table" />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
@@ -201,6 +203,11 @@ export const Lessons: React.FC<{}> = () => {
         <h1>Formik</h1>
         <p>Formik is a popular open-source library for building and processing form data in React applications.</p>
         <Myform/>
+      </CustomTabPanel>
+
+      <CustomTabPanel value={value} index={9}>
+        <h1>Types os table</h1>
+        <Table/>
       </CustomTabPanel>
     </Box>
   );
