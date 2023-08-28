@@ -4,7 +4,7 @@ import { Lessons } from "../pages/lessons/Lessons";
 
 export let LessonsRoutes = {
 
-    path: '/lessons',
+    path: '/Lessons',
     element: <div><Outlet /></div>,
     children: [
         {

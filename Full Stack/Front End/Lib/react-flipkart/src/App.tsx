@@ -8,6 +8,8 @@ import { BrowserRouter } from "react-router-dom"
 // import { Register } from "./pages/register/Register"
 //import { Nav } from "./component/navbar/Nav"
 import { Allroutes } from "./routes"
+import 'ag-grid-community/styles/ag-grid.css'; // Core grid CSS, always needed
+import 'ag-grid-community/styles/ag-theme-alpine.css'; // Optional theme CSS
 
 
 //   return <div>

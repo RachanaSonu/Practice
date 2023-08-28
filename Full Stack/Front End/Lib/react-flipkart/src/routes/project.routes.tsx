@@ -1,14 +1,15 @@
 import { Outlet } from "react-router-dom";
 import { Nav } from "../component/navbar/Nav";
+import { Home } from "../pages/home/Home";
 
 export let ProjectRoutes = {
 
-    path: '/project',
+    path: '/Project',
     element: <div><Nav/><Outlet/></div>,
     children: [
         {
             path: 'home',
-            element: <h1>Home</h1>
+            element: <Home/>
         },
         {
             path: 'login',

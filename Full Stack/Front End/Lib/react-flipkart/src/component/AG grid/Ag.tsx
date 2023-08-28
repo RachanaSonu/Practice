@@ -9,20 +9,16 @@ export const Ag:React.FC<{}>=()=>{
   const [columnDefs, setColumnDefs] = useState([
     { field: 'Number', width: 150, suppressSizeToFit: true },
     { field: 'Name', width: 150, },
-    { field: 'Gender', width: 150,  },
+    { field: 'Gender', width: 150,  }
 
   ]);
-  const defaultColDef = useMemo(() => {
-    return {
-      resizable: true,
-    };
-  }, []);
+
 
   const onGridReady = useCallback((params:any) => {
 
        setRowData([
-        {name:'1',class:'Rachana',chocalate:'Female'},
-        {name:'2',class:'Hemanth',chocalate:'Male'}
+        {Number:'1',Name:'Rachana',Gender:'Female'},
+        {Number:'2',Name:'Hemanth',Gender:'Male'}
     ])
   }, []);
 
@@ -34,7 +30,7 @@ export const Ag:React.FC<{}>=()=>{
   }, []);
 
     return <>
-    <h1>ag-grid</h1>
+    
     <div style={{ width: '100%', height: '100%' }}>
       <div className="outer-div">
 
@@ -44,7 +40,6 @@ export const Ag:React.FC<{}>=()=>{
             
               rowData={rowData}
               columnDefs={columnDefs}
-      
               onGridReady={onGridReady}
             />
           </div>

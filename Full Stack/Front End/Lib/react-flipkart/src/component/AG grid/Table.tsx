@@ -22,8 +22,8 @@ export const Table:React.FC<{}>=()=>{
     <h1>Mui Table</h1>
     <Muitable/>
     <h1>AG Grid</h1>
-    <div  style={{height: '500px'}}></div>
-    <Ag/>
+    <div  style={{height: '500px'}}>
+    <Ag/></div>
     </>
     
 }
