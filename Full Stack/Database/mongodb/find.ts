@@ -9,7 +9,7 @@ async function rac3(){
     let mydb=con.db(dbName)
     let col=mydb.collection('patients')
     // let data=await col.find({Department:'Ortho'}).toArray()
-    let data=await col.find({Department:'Cardio'}).toArray()
+    let data=await col.find({name:'Rachana'}).toArray()
     console.log(data)
 }
 rac3()

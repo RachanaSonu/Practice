@@ -9,7 +9,7 @@ async function rac4(){
     let mydb=con.db(dbName)
     let col=mydb.collection('patients')
     // await col.deleteOne({name:'Putta',Ward_No:'4',Department:'Ortho1'})
-    await col.deleteOne({Department:'Cardio'})
+    await col.deleteOne({name:'Rachana'})
     console.log('deleted')
 }
 rac4()

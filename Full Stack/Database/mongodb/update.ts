@@ -8,9 +8,9 @@ async function rac1(){
     console.log("db connected")
     let mydb=con.db(dbName)
     let col=mydb.collection('patients')
-    await col.updateOne({Department:'Ortho1'},{$set:{Department:'Cardio'}})
-    // let data=await col.updateOne({name:'Putta'},{$set:{name:'Puttaswamy'}})
+    // await col.updateOne({Department:'Ortho1'},{$set:{Department:'Cardio'}})
+    let data=await col.updateOne({name:'Rachana P'},{$set:{name:'Rachana'}})
     // let data=await col.updateOne({Ward_No:'2'},{$set:{Ward_No:'002'}})
-    console.log('Updated')
+    console.log(data)
 }
 rac1()

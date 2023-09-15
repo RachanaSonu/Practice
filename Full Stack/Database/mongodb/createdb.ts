@@ -8,7 +8,7 @@ async function rac(){
     console.log("db connected")
     let mydb=con.db(dbName)
     let col=mydb.collection('patients')
-    await col.insertOne({name:'Putta',Ward_No:'4',Department:'Ortho1'})
+    await col.insertOne({name:'Rachana P',Ward_No:'004',Department:'Dental'})
     console.log('inserted')
 }
 rac()
